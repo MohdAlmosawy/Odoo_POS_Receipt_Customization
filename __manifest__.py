@@ -14,6 +14,8 @@
             'point_of_sale_custom_receipt/static/src/xml/receipt_header.xml',
             'point_of_sale_custom_receipt/static/src/js/orderline.js',
             'point_of_sale_custom_receipt/static/src/xml/orderline.xml',
+            'point_of_sale_custom_receipt/static/src/js/receipt.js',
+            'point_of_sale_custom_receipt/static/src/xml/receipt.xml',
         ],
     },
     'installable': True,
