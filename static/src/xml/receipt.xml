@@ -4,5 +4,8 @@
         <!-- Remove the tax details section -->
         <xpath expr="//div[contains(@class, 'pos-receipt-taxes')]" position="replace">
         </xpath>
+        <!-- Remove "Powered by Odoo" text -->
+        <xpath expr="//p[text()='Powered by Odoo']" position="replace">
+        </xpath>
     </t>
 </templates> 
