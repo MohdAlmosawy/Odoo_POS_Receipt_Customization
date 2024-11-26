@@ -2,7 +2,7 @@
 <templates xml:space="preserve">
     <t t-name="point_of_sale_custom_receipt.CustomReceiptHeader" t-inherit="point_of_sale.ReceiptHeader" t-inherit-mode="extension">
         <xpath expr="//t[@t-if='props.data.company.vat']" position="after">
-            <div>نكتب اللي تبغيه يالغال</div>
+            <div>مشهد، بازار مركزي، فاز 1، طبقة 1، بلاك 139</div>
         </xpath>
     </t>
 </templates> 

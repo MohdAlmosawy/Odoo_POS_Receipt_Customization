@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="point_of_sale.Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension">
+        <!-- Remove the product variant attributes -->
+        <xpath expr="//li[@t-if='line.attributes']" position="replace">
+            <!-- Removes the li element that displays the product variants -->
+        </xpath>
+        <!-- Adjust the product name styling if desired -->
+        <xpath expr="//div[contains(@class, 'product-name')]" position="attributes">
+            <attribute name="class">product-name fw-bolder</attribute>
+        </xpath>
+    </t>
+</templates>
