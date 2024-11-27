@@ -2,7 +2,13 @@
 <templates xml:space="preserve">
     <t t-name="point_of_sale_custom_receipt.CustomReceiptHeader" t-inherit="point_of_sale.ReceiptHeader" t-inherit-mode="extension">
         <xpath expr="//t[@t-if='props.data.company.vat']" position="after">
-            <div>مشهد، بازار مركزي، فاز 1، طبقة 1، بلاك 139</div>
+            <!-- <div>مشهد، بازار مركزي، فاز 1، طبقة 1، بلاك 139</div> -->
+            <t t-if="props.data.company.street" t-esc="props.data.company.street"/><t t-if="props.data.company.street2">, </t>
+            <t t-if="props.data.company.street2" t-esc="props.data.company.street2"/><t t-if="props.data.company.city">, </t>
+            <t t-if="props.data.company.city" t-esc="props.data.company.city"/><t t-if="props.data.company.zip">, </t>
+            <t t-if="props.data.company.zip" t-esc="props.data.company.zip"/><t t-if="props.data.company.state_id">, </t>
+            <t t-if="props.data.company.state_id" t-esc="props.data.company.state_id[1]"/><t t-if="props.data.company.country_id">, </t>
+            <t t-if="props.data.company.country_id" t-esc="props.data.company.country_id[1]"/>
         </xpath>
     </t>
 </templates> 
